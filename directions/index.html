@@ -1,70 +1,193 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='cn'>
 
 <head>
     <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Conference Template">
+    <meta name="description" content="directions">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    <title>Directions | Conference Template</title>
+    <title>指引 | 2026 年广州调和分析与几何测度论青年学者研讨会</title>
+
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* 交通指引页面的补充样式 */
+        .venue-card {
+            background: #ffffff;
+            border: 1px solid #d0d0d0;
+            border-left: 4px solid #813c54;
+            padding: 20px 24px;
+            margin: 24px auto 32px auto;
+            width: 900px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .venue-card h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #813c54;
+        }
+
+        .venue-card p {
+            margin: 8px 0;
+            width: auto;
+            font-size: 1em;
+        }
+
+        .venue-address {
+            font-size: 1.1em;
+            color: #505050;
+            line-height: 1.6;
+        }
+
+        .map-embed {
+            width: 900px;
+            max-width: 100%;
+            height: 420px;
+            margin: 0 auto 32px auto;
+            border: 1px solid #d0d0d0;
+            display: block;
+        }
+
+        .transport-section {
+            width: 900px;
+            max-width: 100%;
+            margin: 0 auto 32px auto;
+        }
+
+        .transport-section h3 {
+            color: #52739e;
+            font-size: 1.3em;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+
+        .transport-item {
+            margin-bottom: 16px;
+            padding-left: 16px;
+            border-left: 3px solid #b8860b;
+        }
+
+        .transport-item strong {
+            color: #813c54;
+        }
+
+        .transport-item p {
+            width: auto;
+            margin: 4px 0;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .note-box {
+            background: #fdf8f0;
+            border: 1px solid #e8dcc8;
+            padding: 14px 18px;
+            margin: 24px auto;
+            width: 900px;
+            max-width: 100%;
+            box-sizing: border-box;
+            font-size: 0.9em;
+            color: #6b5b3e;
+        }
+
+        .note-box strong {
+            color: #813c54;
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .venue-card, .transport-section, .note-box, .map-embed {
+                width: 90%;
+            }
+            .map-embed {
+                height: 300px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
 
     <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
+        <img src="assets/banner.jpg" alt="2026 年广州调和分析与几何测度论青年学者研讨会">
         <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
+            <span class="title1">调和分析与几何测度论</span> <span class="title2"><br><br><br><br></span> <span class="title2"> 青年学者研讨会</span>
         </div>
         <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
+            2026 年 12 月 4-6 日<br> 广州 · 中山大学
         </div>
     </div>
 
     <table class="navigation">
         <tr>
             <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
+                <a class="current" title="会议首页" href="index.html">首页</a>
             </td>
             <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
+                <a title="会议日程" href="program/index.html">日程</a> 
             </td>
-            <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
-            </td>
-            <td class="navigation">
-                <a class="current" title="Directions to the Conference" href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
+            <td class="navigation">	
+                <a title="交通指引" href="directions/index.html">指引</a>
             </td>
         </tr>
     </table>
 
+<h1>推荐住宿</h1>
 
-    <h2>Directions</h2>
-    <p>
-        Here&rsquo;s where you can put directions to the conference,
-        and other information that will help attendees find the location,
-        and find the building, and register, and find local places they can stay, etc.
-        You can embed a <a href="https://www.google.com/maps">Google Maps</a> iframe
-        with directions to the conference like a did below.
-        It can also be helpful to include maps of the campus itself,
-        or pictures of the building the conference will be held in.
-        I&rsquo;ve opted to use a placeholder image of a kitten below.
-    </p>
+    <!-- 地址卡片 -->
+    <div class="venue-card">
+        <h2>中大凯丰酒店（中山大学北门科技文化交流中心）</h2>
+        <p class="venue-address">
+            <strong>地址：</strong>广州市海珠区滨江东路 588 号<br>
+        </p>
+        <p style="font-size: 0.9em; color: #888;">
+            酒店位于中山大学校园内，紧邻珠江。
+        </p>
+        <p style="font-size: 0.9em; color: #888;">
+	    车程参考：距白云机场约 50–60 分钟（受路况影响）；广州南站约 40–45 分钟；广州站约 20–25 分钟。
+        </p>
+    </div>
 
-    <iframe class="directions" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d134998.56138929052!2d-121.98776790326531!3d37.869213445646146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808ff431db2f96d1%3A0x8b99d90a20aa67de!2sMt+Diablo!5e0!3m2!1sen!2sus!4v1561787340910!5m2!1sen!2sus"></iframe>
+    <!-- 重要提示 -->
+    <div class="note-box">
+        <strong>⚠️ 夜间到达提示（23:00—07:00）</strong><br>
+        中山大学北门在 23:00—07:00 时段关闭，校外车辆无法从北门进出。若此时段抵达，请拨打酒店大堂电话 020-89222888 咨询引导。
+    </div>
 
-    <img class="center" src="assets/kitten4.jpg" alt="This is just a kitten right now" id="kitten">
+    <iframe
+        class="map-embed"
+        src="https://amap.com/ssr/embed/place?id=B0FFFYOSK1&amp;name=%E4%B8%AD%E5%A4%A7%E5%87%AF%E4%B8%B0%E9%85%92%E5%BA%97%28%E5%B9%BF%E5%B7%9E%E4%B8%AD%E5%A4%A7%E5%AD%A6%E4%BA%BA%E9%A6%86%E5%BA%97%29&amp;lng=113.298994&amp;lat=23.102284&amp;address=%E6%BB%A8%E6%B1%9F%E4%B8%9C%E8%B7%AF588%E5%8F%B7%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E5%8C%97%E9%97%A8%E7%A7%91%E6%8A%80%E6%96%87%E5%8C%96%E4%BA%A4%E6%B5%81%E4%B8%AD%E5%BF%83"
+        frameborder="0"
+        allowfullscreen
+        loading="lazy"
+        title="中大凯丰酒店地图位置">
+    </iframe>
 
-    <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
-    </footer>
+    <div class="route-header">
+        <h2>中大凯丰酒店 → 中山大学数学学院</h2>
+        <div class="active">
+            🚶 步行
+            <span class="meta">约 18–22 分钟</span>
+        </div>
+        <div>
+            🚲 骑行
+            <span class="meta">约 7–10 分钟</span>
+        </div>
+	    <br>
+    </div>
+
+    <iframe
+        class="map-embed"
+        src="https://amap.com/ssr/embed/place?id=B0FFFDB66H&amp;name=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E5%B9%BF%E5%B7%9E%E6%A0%A1%E5%8C%BA%E5%8D%97%E6%A0%A1%E5%9B%AD%E6%95%B0%E5%AD%A6%E5%AD%A6%E9%99%A2&amp;lng=113.299493&amp;lat=23.093180&amp;address=%E6%96%B0%E6%B8%AF%E8%A5%BF%E8%B7%AF135%E5%8F%B7%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%28%E5%B9%BF%E5%B7%9E%E6%A0%A1%E5%8C%BA%E5%8D%97%E6%A0%A1%E5%9B%AD%29"
+        frameborder="0"
+        allowfullscreen
+        loading="lazy"
+        title="中山大学南校园数学学院地图位置">
+    </iframe>
 
 </body>
 </html>
